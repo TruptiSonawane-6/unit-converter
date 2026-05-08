@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Unit Converter</h1>
+        </div>
+        <div class="converter">
+            <!-- Select Unit Section -->
+            <div class="convert-section">
+                <label for="unitType">Select Unit:</label>
+                <select id="unitType">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="volume">Volume</option>
+                    <option value="time">Time</option>
+                </select>
+            </div>
+            
+            <!-- Convert From Section -->
+            <div class="convert-section">
+                <label for="inputValue">Convert From:</label>
+                <input type="number" id="inputValue" placeholder="Enter value" />
+                <select id="fromUnit">
+                    <!-- Length units -->
+                    <option value="meters">Meters</option>
+                    <option value="kilometers">Kilometers</option>
+                    <option value="miles">Miles</option>
+                    <!-- Weight units -->
+                    <option value="grams">Grams</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="pounds">Pounds</option>
+                    <!-- Temperature units -->
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                    <!-- Volume units -->
+                    <option value="liters">Liters</option>
+                    <option value="milliliters">Milliliters</option>
+                    <option value="gallons">Gallons</option>
+                    <!-- Time units -->
+                    <option value="seconds">Seconds</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                </select>
+            </div>
+            
+            <!-- Convert To Section -->
+            <div class="convert-section">
+                <label for="toUnit">Convert To:</label>
+                <select id="toUnit">
+                    <!-- Length units -->
+                    <option value="meters">Meters</option>
+                    <option value="kilometers">Kilometers</option>
+                    <option value="miles">Miles</option>
+                    <!-- Weight units -->
+                    <option value="grams">Grams</option>
+                    <option value="kilograms">Kilograms</option>
+                    <option value="pounds">Pounds</option>
+                    <!-- Temperature units -->
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                    <!-- Volume units -->
+                    <option value="liters">Liters</option>
+                    <option value="milliliters">Milliliters</option>
+                    <option value="gallons">Gallons</option>
+                    <!-- Time units -->
+                    <option value="seconds">Seconds</option>
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                </select>
+            </div>
+            
+            <!-- Converted Value Section -->
+            <div class="convert-section">
+                <p id="outputValue">Converted Value: 0</p>
+            </div>
+        </div>
+        <button id="convertBtn">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
