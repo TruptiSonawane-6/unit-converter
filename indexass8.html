@@ -1,0 +1,148 @@
+8.deployment
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Solutions</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f5fa;
+        }
+
+        header {
+            background-color: #172554;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2563eb;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .box {
+            background-color: white;
+            margin: 15px auto;
+            padding: 20px;
+            width: 70%;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #172554;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #172554;
+        }
+
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Web Solutions</h1>
+        <p>Innovative Digital Solutions for Everyone</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="content" id="home">
+
+        <h2>Welcome to Web Solutions</h2>
+        <p>
+            We provide simple, reliable and effective
+            digital solutions to meet modern needs.
+        </p>
+
+        <div class="box" id="about">
+            <h2>About Us</h2>
+            <p>
+                We focus on creating user-friendly websites
+                with attractive designs and useful features.
+            </p>
+        </div>
+
+        <div class="box" id="services">
+            <h2>Our Services</h2>
+            <p>Web Development</p>
+            <p>Responsive Website Design</p>
+            <p>Digital Solutions</p>
+        </div>
+
+        <div class="box" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@websolutions.com</p>
+            <button onclick="showMessage()">Get Started</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Web Solutions. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Thank you for contacting Web Solutions!");
+        }
+    </script>
+
+</body>
+</html>
+
+create folder and in that create index.html file
+Local server:
+1. Save the file as index.html.
+2. Open it in VS Code.
+3. Install Live Server extension.
+4. Right-click and select Open with Live Server.
+5. Test all navigation links and the Get Started button.
+
+Cloud server (GitHub Pages):
+1. Create a GitHub account.
+2. Create a public repository named WebSolutions.
+3. Upload index.html.
+4. Go to Settings → Pages.
+5. Select Deploy from a branch.
+6. Choose main and / (root).
+7. Click Save.
+8. Open the generated public website URL.
